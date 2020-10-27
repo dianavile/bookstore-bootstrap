@@ -207,10 +207,16 @@ textarea {
     padding: 0px;
 }
 
+
+/* subscribe section */
+
 .jumbotron {
     background-color: #f9eadf;
     margin: 0;
 }
+
+
+/* footer section */
 
 #footer {
     background-color: #e3e0eb;
@@ -220,4 +226,19 @@ a,
 p.copyright {
     color: #23286b;
     margin: 0;
+}
+
+#privacy {
+    text-align: center;
+    background-color: #f9eadf;
+}
+
+#terms {
+    text-align: center;
+    background-color: #fffbdf;
+}
+
+#legal {
+    text-align: center;
+    background-color: #89b3f4;
 }
