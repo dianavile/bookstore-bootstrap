@@ -197,3 +197,22 @@ textarea {
 .i.fa.fa-star.fa-lg::before {
     color: #fffbdf;
 }
+
+.div.container-fluid {
+    padding: 0px;
+}
+
+.jumbotron {
+    background-color: #f9eadf;
+    margin: 0;
+}
+
+#footer {
+    background-color: #e3e0eb;
+}
+
+a,
+p.copyright {
+    color: #23286b;
+    margin: 0;
+}
