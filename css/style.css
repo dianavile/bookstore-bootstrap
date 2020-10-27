@@ -194,8 +194,8 @@ textarea {
     width: 100vw;
 }
 
-.i.fa.fa-star.fa-lg::before {
-    color: #fffbdf;
+.fa-star {
+    color: #89b3f4;
 }
 
 .div.container-fluid {
