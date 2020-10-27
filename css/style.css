@@ -1,0 +1,152 @@
+/*colors*/
+
+ :root {
+    --blue-color: #89b3f4;
+    --purple-color: #e3e0eb;
+    --salmon-color: #f9eadf;
+    --yellow-color: #fffbdf;
+}
+
+
+/*global styles*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 75rem;
+    max-width: 100vw;
+    padding: 30px 5px 5px 10px;
+    z-index: 0;
+    font-weight: bold;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Pattaya', sans-serif;
+    color: #23286b;
+    margin-top: 0;
+    margin-bottom: 0.1rem;
+    font-weight: 400;
+}
+
+h3,
+h4,
+h5,
+.btn-secondary {
+    font-weight: bold;
+}
+
+p {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+
+button,
+input,
+textarea {
+    font-family: inherit;
+    font-size: 90%;
+    line-height: 1.15;
+    margin: 0;
+    overflow: visible;
+    text-transform: none;
+}
+
+
+/* navbar */
+
+#categories,
+.nav-link,
+.dropdown-toggle,
+.mt-1 {
+    color: #23286b;
+}
+
+.navbar {
+    background-color: #E3E0EB;
+    box-shadow: 0 1rem 5rem 0 rgba(0, 0, 0, 0.1);
+}
+
+.nav-link:hover {
+    color: #23286b;
+}
+
+.navbar-toggler:focus {
+    outline: none;
+}
+
+.navbar-toggler {
+    border: none;
+}
+
+.dropdown-toggle,
+.dropdown-item {
+    font-size: 1rem;
+}
+
+.dropdown-item {
+    color: #23286b;
+    font-size: 1rem;
+}
+
+.dropdown-item:hover {
+    color: #23286b;
+    background-color: #fffbdf;
+    font-size: 1rem;
+}
+
+.fa-bars {
+    color: #23286b;
+    font-size: 1.5rem;
+}
+
+
+/*button*/
+
+.btn {
+    background-color: #fffbdf;
+    font-weight: bold;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+}
+
+.btn:hover {
+    background-color: #89b3f4;
+}
+
+
+/*searchbar*/
+
+.search {
+    color: #23286b;
+    align-items: center;
+    border-style: 1px solid #23286b;
+}
+
+.search-button,
+.search input::placeholder {
+    color: #23286b;
+    background-color: #fffbdf;
+    border-style: 1px solid #23286b !important;
+}
+
+.fa-shopping-cart {
+    color: #23286b;
+    font-size: 1.5rem;
+    padding: 5px;
+}
