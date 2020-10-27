@@ -119,6 +119,7 @@ textarea {
 /*button*/
 
 .btn {
+    color: #23286b;
     background-color: #fffbdf;
     font-weight: bold;
     padding-top: 0.3rem;
@@ -134,19 +135,24 @@ textarea {
 
 .search {
     color: #23286b;
-    align-items: center;
+    align-items: left;
     border-style: 1px solid #23286b;
 }
 
 .search-button,
 .search input::placeholder {
     color: #23286b;
+    font-weight: bold;
     background-color: #fffbdf;
-    border-style: 1px solid #23286b !important;
+    border-style: 1px solid #23286b;
+}
+
+.search input:hover {
+    background-color: #89b3f4;
 }
 
 .fa-shopping-cart {
     color: #23286b;
     font-size: 1.5rem;
-    padding: 5px;
+    padding: 0.5rem;
 }
