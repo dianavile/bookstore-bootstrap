@@ -119,6 +119,7 @@ textarea {
 /*button*/
 
 .btn {
+    color: #23286b;
     background-color: #fffbdf;
     font-weight: bold;
     padding-top: 0.3rem;
@@ -134,19 +135,110 @@ textarea {
 
 .search {
     color: #23286b;
-    align-items: center;
+    align-items: left;
     border-style: 1px solid #23286b;
 }
 
 .search-button,
 .search input::placeholder {
     color: #23286b;
+    font-weight: bold;
     background-color: #fffbdf;
-    border-style: 1px solid #23286b !important;
+    border-style: 1px solid #23286b;
+}
+
+.search input:hover {
+    background-color: #89b3f4;
 }
 
 .fa-shopping-cart {
     color: #23286b;
     font-size: 1.5rem;
-    padding: 5px;
+    padding: 0.5rem;
+}
+
+
+/*carousel*/
+
+.main_banner {
+    font-size: 5rem;
+    position: relative;
+    left: 5rem;
+    top: -12rem;
+    z-index: 1;
+}
+
+.carousel-button {
+    font-size: 2rem;
+    align-items: right;
+}
+
+.main_banner,
+.carousel-button {
+    text-align: left;
+}
+
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+    filter: invert(100%);
+}
+
+
+/*TODO get rid off overflow-x: hidden*/
+
+
+/* main */
+
+#main {
+    width: 100vw;
+}
+
+.i.fa.fa-star.fa-lg::before {
+    color: #fffbdf;
+}
+
+.div.container-fluid {
+    padding: 0px;
+    margin: 0;
+}
+
+.section.jumbotron {
+    padding: 0px;
+}
+
+
+/* subscribe section */
+
+.jumbotron {
+    background-color: #f9eadf;
+    margin: 0;
+}
+
+
+/* footer section */
+
+#footer {
+    background-color: #e3e0eb;
+}
+
+a,
+p.copyright {
+    color: #23286b;
+    margin: 0;
+}
+
+#privacy {
+    text-align: center;
+    background-color: #f9eadf;
+}
+
+#terms {
+    text-align: center;
+    background-color: #fffbdf;
+}
+
+#legal {
+    text-align: center;
+    background-color: #89b3f4;
 }
