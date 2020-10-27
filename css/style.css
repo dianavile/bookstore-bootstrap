@@ -183,3 +183,17 @@ textarea {
 .carousel-indicators {
     filter: invert(100%);
 }
+
+
+/*TODO get rid off overflow-x: hidden*/
+
+
+/* main */
+
+#main {
+    width: 100vw;
+}
+
+.i.fa.fa-star.fa-lg::before {
+    color: #fffbdf;
+}
