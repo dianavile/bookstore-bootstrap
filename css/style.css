@@ -200,6 +200,11 @@ textarea {
 
 .div.container-fluid {
     padding: 0px;
+    margin: 0;
+}
+
+.section.jumbotron {
+    padding: 0px;
 }
 
 .jumbotron {
