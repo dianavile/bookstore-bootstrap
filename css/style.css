@@ -177,3 +177,9 @@ textarea {
 .carousel-button {
     text-align: left;
 }
+
+.carousel-control-next,
+.carousel-control-prev,
+.carousel-indicators {
+    filter: invert(100%);
+}
