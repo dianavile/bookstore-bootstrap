@@ -36,9 +36,9 @@
                     <li class="nav-item dropdown mx-lg-4">
                         <a id="categories" class="nav-link dropdown-toggle mt-1" href="#" role="button" data-toggle="dropdown">books</a>
                         <div class="dropdown-menu mb-1 border-light" aria-labelledby="categories">
-                            <a href="#" class="dropdown-item">Bestsellers</a>
-                            <a href="#" class="dropdown-item">Readers</a>
-                            <a href="#" class="dropdown-item">Promotions</a>
+                            <a href="#bestsellers" class="dropdown-item">Bestsellers</a>
+                            <a href="#readers" class="dropdown-item">Readers</a>
+                            <a href="#promotions" class="dropdown-item">Promotions</a>
                         </div>
                     </li>
                 </ul>
@@ -112,57 +112,37 @@
                         <h2 class="modal-title" id="loginModalLabel">Bookstore Login</h2>
                     </div>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-              <span aria-hidden="true">&times;</span>
-            </button>
+                        <span aria-hidden="true">&times;</span>
+                    </button>
                 </div>
                 <div class="modal-body">
+                    <!-- TODO: Check form validation  -->
                     <form>
                         <div class="form-row">
-                            <div class="form-group col-sm-4"></div>
-                            <div class="form-group col-sm-4"></div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="inputmail">Email Address</label>
+                                <input type="mail" class="form-control form-control-sm mr-1" id="inputMail" placeholder="Enter email" autocomplete="username">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email.</small>
+                                <div id="email_error" class="invalid-feedback">This is a required field.</div>
+                                <div class="invalid-tooltip"> Please provide a valid email.</div>
+                            </div>
+                            <div class="form-group col-sm-4">
+                                <label class="sr-only" for="inputPassword">Password</label>
+                                <input type="password" class="form-control form-control-sm mr-1" id="inputPassword" placeholder="Password" autocomplete="current-password">
+                                <div id="password_error" class="invalid-feedback">This is a required field.</div>
+                                <div class="invalid-tooltip"> Please provide a valid password.</div>
+                            </div>
                             <div class="col-sm-auto">
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" />
-                                    <label class="form-check-label">Remember me</label>
+                                    <label class="form-check-label">Save details</label>
                                 </div>
                             </div>
                         </div>
                         <div class="form-row">
-                            <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">
-                  Cancel
-                </button>
-                            <button type="submit" class="btn text-white btn-sm ml-1">
-                  login
-                </button>
+                            <button type="submit" class="btn btn-secondary btn-sm ml-auto">login</button>
                         </div>
                     </form>
-                    <!-- TODO: Check form validation    
-                    <form action="" method="post" id="login_form" name="form3" onsubmit="return loginValidation()" autocomplete="on">
-                                        <div class="form-group">
-                                            <div class="form-row">
-                                                <label for="Email2">Email</label>
-                                                <input type="email" class="form-control" id="Email2" value="name@gmail.com" aria-describedby="emailHelp" placeholder="Enter email" autocomplete="username" required>
-                                                <small id="emailHelp" class="form-text text-muted">We'll never share your email.</small>
-                                                <div id="email_error" class="invalid-feedback">This is a required field.</div>
-                                                <div class="invalid-tooltip"> Please provide a valid email.</div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="Password2">Password</label>
-                                            <input type="password" class="form-control" id="Password2" placeholder="Password" autocomplete="current-password" required>
-                                            <div id="password_error" class="invalid-feedback">This is a required field.</div>
-                                            <div class="invalid-tooltip"> Please provide a valid password.</div>
-                                        </div>
-                                        <button type="submit" class="btn btn-sm btn-outline-info ml-1" value="login">Login</button>
-                    </form> -->
-                </div>
-                <div class="modal-footer">
-                    <h6 class="font-weight-light">
-                        New?
-                        <button type="submit" class="btn btn-sm btn-outline-info ml-1">
-                Register
-              </button>
-                    </h6>
                 </div>
             </div>
         </div>
@@ -264,7 +244,6 @@
                                         <i class="fa fa-star fa-lg"></i>
                                         <i class="fa fa-star fa-lg"></i>
                                         <i class="fa fa-star fa-lg"></i>
-                                        <i class="fa fa-star fa-lg"></i>
                                     </div>
                                     <div>
                                         <p class="text-right my-0">27.21&euro;</p>
@@ -339,14 +318,13 @@
                                     <i class="fa fa-star fa-lg"></i>
                                     <i class="fa fa-star fa-lg"></i>
                                     <i class="fa fa-star fa-lg"></i>
-                                    <i class="fa fa-star fa-lg"></i>
                                 </div>
                                 <div>
                                     <p class="text-right my-0">43.45&euro;</p>
                                 </div>
                                 <button type="button" class="btn btn-sm btn-outline-info ml-1">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                  </button>
+                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -443,8 +421,6 @@
                                     <i class="fa fa-star fa-lg"></i>
                                     <i class="fa fa-star fa-lg"></i>
                                     <i class="fa fa-star fa-lg"></i>
-                                    <i class="fa fa-star fa-lg"></i>
-                                    <i class="fa fa-star fa-lg"></i>
                                 </div>
                                 <div>
                                     <p class="text-right my-0">32.99&euro;</p>
@@ -471,7 +447,6 @@
                                     Hardcover
                                 </p>
                                 <div class="align-self-center">
-                                    <i class="fa fa-star fa-lg"></i>
                                     <i class="fa fa-star fa-lg"></i>
                                     <i class="fa fa-star fa-lg"></i>
                                     <i class="fa fa-star fa-lg"></i>
@@ -590,19 +565,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
 </body>
-
-</html>
-
-
-
-
-<!-- Optional JavaScript -->
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src=" https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
-</body>
-
-</html>
 
 </html>
