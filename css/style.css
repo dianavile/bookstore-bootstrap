@@ -148,14 +148,15 @@ textarea {
 }
 
 
-/* loginform -validation  
-input:is-invalid {
+/* form validation*/
+
+is-invalid {
     border: 2px solid red;
 }
 
-input:is-valid{
+is-valid {
     border: 2px solid green;
-}*/
+}
 
 .fa-shopping-cart {
     color: #23286b;

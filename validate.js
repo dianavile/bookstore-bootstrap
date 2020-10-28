@@ -15,15 +15,18 @@ function validateForm() {
 	let inputZip = document.forms["myForm"]["inputZip"];
 	let gridCheck = document.forms["myForm"]["gridCheck"];
 
-	if(inputEmail.value == "") {
-		inputEmail.classList.add("is-invalid");
-		document.getElementById("errorEmail").textContent = "This field is required";
+    if (inputEmail.value == "") {
+        inputEmail.classList.add("is-invalid");
+        document.getElementById("errorEmail").textContent = "This field is required";
         acumErrores++;
-    }else if(!validar_email(inputEmail.value)){
-		inputEmail.classList.add("is-invalid");
-		document.getElementById("errorEmail").textContent = "The email does not meet required mailformat";
-		acumErrores ++;
-	}
+    } else if (!validar_email(inputEmail.value)) {
+        inputEmail.classList.add("is-invalid");
+        document.getElementById("errorEmail").textContent = "The email does not meet required mailformat";
+        acumErrores++;
+    } else {
+        inputEmail.classList.add("is-valid");
+        document.getElementById("successEmail").textContent = "This email is correct";
+     }
 
     if(inputPassword.value == "") {
 		inputPassword.classList.add("is-invalid");
