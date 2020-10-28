@@ -117,30 +117,21 @@
                 </div>
                 <div class="modal-body">
                     <!-- TODO: Check form validation  -->
-                    <form>
+                    <form id="login" action="login.php" method="post">
                         <div class="form-row">
-                            <div class="form-group col-sm-4">
-                                <label class="sr-only" for="inputmail">Email Address</label>
-                                <input type="mail" class="form-control form-control-sm mr-1" id="inputMail" placeholder="Enter email" autocomplete="username">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email.</small>
-                                <div id="email_error" class="invalid-feedback">This is a required field.</div>
-                                <div class="invalid-tooltip"> Please provide a valid email.</div>
+                            <div class="form-group col-sm-6">
+                                <!-- <label for="inputmail">Email Address</label> -->
+                                <input type="email" id="mail" name="mail" class="mail form-control-sm" placeholder="Email" pattern="^([\w\d._\-#])+@([\w\d._\-#]+[.][\w\d._\-#]+)+$" autocomplete="username">
+                                <span id="email_error" class="error" aria-live="polite">required field.</span>
                             </div>
-                            <div class="form-group col-sm-4">
-                                <label class="sr-only" for="inputPassword">Password</label>
-                                <input type="password" class="form-control form-control-sm mr-1" id="inputPassword" placeholder="Password" autocomplete="current-password">
-                                <div id="password_error" class="invalid-feedback">This is a required field.</div>
-                                <div class="invalid-tooltip"> Please provide a valid password.</div>
-                            </div>
-                            <div class="col-sm-auto">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" />
-                                    <label class="form-check-label">Save details</label>
-                                </div>
+                            <div class="form-group col-sm-6">
+                                <!-- <label for="inputPassword">Password</label> -->
+                                <input type="password" class="form-control-sm" id="inputPassword" placeholder="Password" autocomplete="current-password" required>
+                                <span id="password_error" class="error" aria-live="polite">required field.</span>
                             </div>
                         </div>
                         <div class="form-row">
-                            <button type="submit" class="btn btn-secondary btn-sm ml-auto">login</button>
+                            <button type="submit" value="login" class="btn btn-secondary btn-sm ml-auto">login</button>
                         </div>
                     </form>
                 </div>
