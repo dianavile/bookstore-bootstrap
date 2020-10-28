@@ -1,13 +1,14 @@
 //declare & assign variables to fetch forms
 const form = document.getElementById('myFormId');
 
-function registerValidate() {
+function validateForm() {
 	let acumErrores = 0;
-	
 	form.classList.remove('is-invalid');
 	
 	let inputEmail = document.getElementById('inputEmail');
-	let inputPassword = document.forms["myForm"]["inputPassword"];
+    let inputPassword = document.forms["myForm"]["inputPassword"];
+   // let newPassword = document.forms["myForm"]["newPassword"];
+    //let currentPassword = document.forms["myForm"]["currentPassword"];
 	let inputAddress = document.forms["myForm"]["inputAddress"];
 	let inputProvince = document.forms["myForm"]["inputProvince"];
 	let inputCity = document.forms["myForm"]["inputCity"];
@@ -17,7 +18,7 @@ function registerValidate() {
 	if(inputEmail.value == "") {
 		inputEmail.classList.add("is-invalid");
 		document.getElementById("errorEmail").textContent = "This field is required";
-        acumErrores ++;
+        acumErrores++;
     }else if(!validar_email(inputEmail.value)){
 		inputEmail.classList.add("is-invalid");
 		document.getElementById("errorEmail").textContent = "The email does not meet required mailformat";
@@ -66,7 +67,6 @@ function registerValidate() {
 		return true;
 	}
 }
-
 
 form.addEventListener('blur', (event) => {
 	console.log(event);

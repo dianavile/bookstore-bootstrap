@@ -149,11 +149,11 @@ textarea {
 
 
 /* loginform -validation  
-input:invalid {
+input:is-invalid {
     border: 2px solid red;
 }
 
-input:valid {
+input:is-valid{
     border: 2px solid green;
 }*/
 
