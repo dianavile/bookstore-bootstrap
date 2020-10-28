@@ -201,7 +201,7 @@
                         <div class="d-flex flex-column info_book justify-content-center p-2">
                             <div>
                                 <h4 class="book_title">Clean Code</h4>
-                                <h5 class="lighter_font">Robert C. Martin</h5>
+                                <h6 class="lighter_font">Robert C. Martin</h6>
                             </div>
                             <div>
                                 <div class="d-flex justify-content-between">
@@ -232,7 +232,7 @@
                         <div class="d-flex flex-column info_book justify-content-center p-2">
                             <div>
                                 <h4 class="book_title">Frontend Architecture</h4>
-                                <h5 class="lighter_font">Micah Godbolt</h5>
+                                <h6 class="lighter_font">Micah Godbolt</h6>
                             </div>
                             <div>
                                 <div class="d-flex justify-content-between">
@@ -262,7 +262,7 @@
                         <div class="d-flex flex-column info_book justify-content-center p-2">
                             <div>
                                 <h4 class="book_title">Responsive Web Design</h4>
-                                <h5 class="lighter_font">Ben Frain</h5>
+                                <h6 class="lighter_font">Ben Frain</h6>
                             </div>
                             <div>
                                 <div class="d-flex justify-content-between">
@@ -306,7 +306,7 @@
                     <div class="d-flex flex-column info_book justify-content-center p-2">
                         <div>
                             <h4 class="book_title">JavaScript: The Definitive Guide</h4>
-                            <h5 class="lighter_font">David Flanagan</h5>
+                            <h6 class="lighter_font">David Flanagan</h6>
                         </div>
                         <div>
                             <div class="d-flex justify-content-between">
@@ -336,7 +336,7 @@
                     <div class="d-flex flex-column info_book justify-content-center p-2">
                         <div>
                             <h4 class="book_title">Don´t make me think</h4>
-                            <h5 class="lighter_font">Steve Krug</h5>
+                            <h6 class="lighter_font">Steve Krug</h6>
                         </div>
                         <div>
                             <div class="d-flex justify-content-between">
@@ -367,7 +367,7 @@
                     <div class="d-flex flex-column info_book justify-content-center p-2">
                         <div>
                             <h4 class="book_title">The Road To React</h4>
-                            <h5 class="lighter_font">Robin Wieruch</h5>
+                            <h6 class="lighter_font">Robin Wieruch</h6>
                         </div>
                         <div>
                             <div class="d-flex justify-content-between">
@@ -410,7 +410,7 @@
                     <div class="d-flex flex-column info_book justify-content-center p-2">
                         <div>
                             <h4 class="book_title">Web Development-Node Express</h4>
-                            <h5 class="lighter_font">Ethan Brown</h5>
+                            <h6 class="lighter_font">Ethan Brown</h6>
                         </div>
                         <div>
                             <div class="d-flex justify-content-between">
@@ -439,7 +439,7 @@
                     <div class="d-flex flex-column info_book justify-content-center p-2">
                         <div>
                             <h4 class="book_title">Web Development & Design</h4>
-                            <h5 class="lighter_font">Terry Felke Morris</h5>
+                            <h6 class="lighter_font">Terry Felke Morris</h6>
                         </div>
                         <div>
                             <div class="d-flex justify-content-between">
@@ -469,7 +469,7 @@
                     <div class="d-flex flex-column info_book justify-content-center p-2">
                         <div>
                             <h4 class="book_title">SVG Animations</h4>
-                            <h5 class="lighter_font">Sarah Drasner</h5>
+                            <h6 class="lighter_font">Sarah Drasner</h6>
                         </div>
                         <div>
                             <div class="d-flex justify-content-between">
@@ -500,12 +500,14 @@
             <section class="container-fluid">
                 <div class="row text-center align-items-center justify-content-center">
                     <article class="col-12 col-sm-5 col-md-6 mt-5">
+                        <h5>Subscribe to <strong>Bookstore Newsletter</strong> </h5>
                         <h2>Get our monthly updates</h2>
                         <p>directly in your email</p>
                     </article>
                 </div>
                 <form class="form-inline justify-content-center">
-                    <input type="email" class="form-control form-control-sm col-sm-3 mr-1" placeholder="Enter email" id="inputEmail" />
+                    <input type="email" class="form-control form-control-sm col-sm-3 mr-1" placeholder="Email" id="inputEmail" required />
+                    <div id="email_error" class="invalid-feedback"></div>
                     <button type="submit" class="btn align-items-center btn-sm btn-primary mr-0">
               <a href="mailto:bookstore@gmail.com?subject="> Subscribe </a>
             </button>
@@ -518,14 +520,14 @@
     <footer id="footer">
         <div class="container-fluid">
             <!-- Logo -->
-            <div class="navbar-brand mr-auto mb-1" role="primary" aria-label="logo">
-                <h3>Bookstore</h3>
+            <div class="footer-brand mr-auto mb-1 align-items-center justify-content-center" role="primary" aria-label="logo">
+                <h3 class="title">Bookstore</h3>
             </div>
             <!--social SECTION-->
             <div class="row text-center align-items-center justify-content-center">
                 <section id="social">
                     <article class="class=" col-12 col-sm-5 col-md-6 mt-5 ">
-                        <h4>Follow us on</h4>
+                        <h5>Follow us on</h5>
                             <ul>
                                 <li>
                                     <a href="https://www.instagram.com/accounts/login/ ">
@@ -538,7 +540,7 @@
                 </section>      
             </div>
             <!--legal SECTION-->
-            <section class="row text-left align-items-center justify-content-left ">
+            <section class="row text-left align-items-center justify-content-center ">
                 <div id="legal " class="site-footer " role="contentinfo ">
                     <ul class="li ">
                         <li>
@@ -553,7 +555,7 @@
             </section>       
             <!--copyright SECTION-->
             <nav class="footer-nav row text-center align-items-center justify-content-center ">  
-                <p>Coded with <img class="love " src=/assets/img/hearth.svg " alt="heart" /> by <a href="https://www.github.com/dianavile "> Diana Vilé.</a></p>
+                <p class="heart ">Coded with <img class="love " src=/assets/img/hearth.svg " alt="heart" /> by <a href="https://www.github.com/dianavile "> Diana Vilé.</a></p>
                     </nav>
                     <p class="copyright">Copyright ©2020 | Bookstore. All rights reserved.</p>
             </div>

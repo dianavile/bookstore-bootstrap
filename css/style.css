@@ -30,9 +30,7 @@ html {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+h4 {
     font-family: 'Pattaya', sans-serif;
     color: #23286b;
     margin-top: 0;
@@ -42,7 +40,6 @@ h6 {
 
 h3,
 h4,
-h5,
 .btn-secondary {
     font-weight: bold;
 }
@@ -222,10 +219,19 @@ textarea {
     background-color: #e3e0eb;
 }
 
-a,
+h3.title {
+    text-align: center;
+}
+
+a {
+    text-align: center;
+}
+
 p.copyright {
     color: #23286b;
     margin: 0;
+    font-size: 12px;
+    text-align: center;
 }
 
 #privacy {
