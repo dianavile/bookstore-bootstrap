@@ -43,14 +43,12 @@
                     </li>
                 </ul>
                 <!-- Search form -->
-                <form class="form-inline mt-4 mt-md-0 mx-lg-8">
-                    <input class="form-control form-control-sm col-12 mr-sm-2" type="text" placeholder="Search a book" aria-label="Search" required minlength="3" />
+                <form class="form-inline mt-4 mt-md-0 mx-lg-8" onsubmit="return validateForm()">
+                    <input type="text" id="search" class="form-control-sm col-12 mr-sm-2" placeholder="Search a book" aria-label="Search" required minlength="3" />
                 </form>
                 <!-- Register -->
                 <li class="nav-item">
-                    <button type="button" class="btn btn-sm btn-outline-info ml-2" data-toggle="modal" data-target="#registerModal">
-              Register
-            </button>
+                    <button type="button" class="btn btn-sm btn-outline-info ml-2" data-toggle="modal" data-target="#registerModal">Register</button>
                 </li>
                 <!-- Login  -->
                 <li class="nav-item">
@@ -82,7 +80,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="container">
-                        <form id="registrer">
+                        <form id="myFormId" name="myForm" action="" onsubmit="return validateForm()">
                             <div class="form-row">
                                 <div class="form-group col-sm-4">
                                     <label for="inputmail">Email Address</label>
@@ -216,7 +214,7 @@
     </header>
 
     <!-- main section-->
-    <main id="main ">
+    <main id="main">
         <!-- bestsellers-->
         <section id="bestsellers " class="row justify-content-center ">
             <div class="row mx-0justify-content-center ">
