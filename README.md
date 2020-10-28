@@ -1,7 +1,7 @@
 # Bookstore Ecommerce
 Landingpage
 
-![]
+![Landingpage](https://github.com/dianavile/bookstore-bootstrap/blob/main/assets/img/Landingpage.jpg)
 
 ## Bootstrap setup 
 ```
