@@ -140,7 +140,6 @@ textarea {
 .search input::placeholder {
     color: #23286b;
     font-weight: bold;
-    background-color: #fffbdf;
     border-style: 1px solid #23286b;
 }
 
