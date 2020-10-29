@@ -44,8 +44,8 @@
                     </li>
                 </ul>
                 <!-- Search form -->
-                <form method="post" action="answer.html" id="myFormId" class="form-inline mt-4 mt-md-0 mx-lg-8" onsubmit="return searchForm()" name="myForm">
-                    <input type="text" id="search" class="form-control-sm col-12 mr-sm-2" placeholder="Search a book" aria-label="Search" />
+                <form method="post" action="" id="myFormId" class="form-inline mt-4 mt-md-0 mx-lg-8" onsubmit="return searchForm()" name="myForm">
+                    <input type="text" id="search" class="form-control form-control-sm col-12 mr-sm-2" placeholder="Search a book" aria-label="Search" />
                     <div class="invalid-feedback" id="errorSearch"></div>
                 </form>
                 <!-- Register -->
@@ -66,7 +66,7 @@
         </section>
     </nav>
 
-    <!-- TODO: check validation process register section -->
+    <!-- Register form  -->
     <section id="registerModal" class="modal fade container-fluid" role="dialog" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -87,17 +87,17 @@
                                 <div class="form-group col-sm-4">
                                     <label for="inputmail">Email Address</label>
                                     <input type="mail" id="mail" name="mail" class="form-control" placeholder="mail" pattern="^([\w\d._\-#])+@([\w\d._\-#]+[.][\w\d._\-#]+)+$" autocomplete="username">
-                                    <div class="invalid-feedback" id="errorEmail"></div>
+                                    <div class="invalid-feedback" id="errorMail"></div>
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="newPassword">New Password</label>
-                                    <input type="newpassword" id="newPassword" name="newPassword" class="form-control" placeholder="Password" autocomplete="new-password">
+                                    <input type="password" id="newPassword" name="newPassword" class="form-control" placeholder="Password" autocomplete="new-password">
                                     <div class="invalid-feedback" id="errorPassword"></div>
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="repeatPassword">Repeat Password</label>
-                                    <input type="repeatpassword" id="repeatPassword" name="repeatPassword" class="form-control" placeholder="Repeat" autocomplete="repeat-password">
-                                    <div class="invalid-feedback" id="errorPassword"></div>
+                                    <input type="password" id="repeatPassword" name="repeatPassword" class="form-control" placeholder="repeatPassword" autocomplete="repeat-password">
+                                    <div class="invalid-feedback" id="errorRepeatPassword"></div>
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label for="inputProvince">Address</label>
@@ -144,7 +144,7 @@
         </div>
     </section>
 
-    <!-- TODO: check validation process login section -->
+    <!-- login section -->
     <section id="loginModal" class="modal fade container-fluid" role="dialog" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -158,19 +158,17 @@
                 </div>
                 <div class="modal-body">
                     <!-- TODO: Check form validation  -->
-                    <form id="login">
+                    <form method="post" action="" id="myFormId3" onsubmit="return loginForm()" name="myForm3">
                         <div class="form-row">
                             <div class="form-group col-sm-6">
-                                <label for="mail">Email Address</label>
+                                <label for="email">Email Address</label>
                                 <input type="email" id="email" name="email" class="form-control" placeholder="Email" pattern="^([\w\d._\-#])+@([\w\d._\-#]+[.][\w\d._\-#]+)+$" autocomplete="username">
                                 <div class="invalid-feedback" id="errorEmail"></div>
-                                <div class="valid-feedback" id="successEmail"></div>
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="inputPassword">Password</label>
-                                <input type="password" class="form-control" id="inputPassword" placeholder="Password" autocomplete="password" required>
-                                <div class="invalid-feedback" id="errorPassword"></div>
-                                <div class="valid-feedback" id="successPassword"></div>
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password" autocomplete="password">
+                                <div class="invalid-feedback" id="errorInputPassword"></div>
                             </div>
                         </div>
                         <div class="form-row">
