@@ -68,7 +68,7 @@ function registerForm() {
 	}
 	 if(repeatPassword.value == "") {
 		repeatPassword.classList.add("is-invalid");
-		document.getElementById("errorPassword").textContent = "Required field";
+		document.getElementById("errorRepeatPassword").textContent = "Required field";
 		console.log("Required field");
 		acumErrores++;
 		console.log(acumErrores);
