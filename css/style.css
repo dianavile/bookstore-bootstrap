@@ -147,17 +147,6 @@ textarea {
     background-color: #89b3f4;
 }
 
-
-/* form validation*/
-
-is-invalid {
-    border: 2px solid red;
-}
-
-is-valid {
-    border: 2px solid green;
-}
-
 .fa-shopping-cart {
     color: #23286b;
     font-size: 1.5rem;
