@@ -145,11 +145,11 @@ function loginForm() {
 }
 	
 //removes invalid color from input, when valid
-//form.addEventListener('blur', (event) => {
-//	console.log(event);
-//	if(event.target.value!='') event.target.classList.remove('is-invalid');
+form.addEventListener('blur', (event) => {
+	console.log(event);
+	if(event.target.value!='') event.target.classList.remove('is-invalid');
     //registerValidate();
-//}, true);
+}, true);
 
 
 function validar_email(email) {
