@@ -8,8 +8,8 @@ function searchForm() {
 	form.classList.remove("is-invalid");
 
 	//let search = document.getElementById("search");
-	let search = document.forms["mynameForm"]["search"];//name (form), id (input search)
-
+	let search = document.forms["myForm"]["search"];//name (form), id (input search)
+    
 	//condicionales
 	//innerHTML = texto assignado por un variable
 	//textContent = texto directo
@@ -33,11 +33,8 @@ function searchForm() {
 	}
 }
 	
- 
-
-
 /*
-function validateForm() {
+function registerForm() {
 	let acumErrores = 0;
 	form.classList.remove('is-invalid');
 	

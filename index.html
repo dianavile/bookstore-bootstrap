@@ -44,7 +44,7 @@
                     </li>
                 </ul>
                 <!-- Search form -->
-                <form method="post" action="answer.html" id="myFormId" class="form-inline mt-4 mt-md-0 mx-lg-8" onsubmit="return searchForm()" name="mynameForm">
+                <form method="post" action="answer.html" id="myFormId" class="form-inline mt-4 mt-md-0 mx-lg-8" onsubmit="return searchForm()" name="myForm">
                     <input type="text" id="search" class="form-control-sm col-12 mr-sm-2" placeholder="Search a book" aria-label="Search" />
                     <div class="invalid-feedback" id="errorSearch"></div>
                 </form>
@@ -82,7 +82,7 @@
                 </div>
                 <div class="modal-body">
                     <div class="container">
-                        <form id="myFormId2" name="myForm" action="">
+                        <form method="post" action="" id="myFormId2" onsubmit="return registerForm()" name="myForm2">
                             <div class="form-row">
                                 <div class="form-group col-sm-4">
                                     <label for="inputmail">Email Address</label>
@@ -91,17 +91,17 @@
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="newPassword">New Password</label>
-                                    <input type="newpassword" name="newPassword" class="form-control" id="newPassword" placeholder="Password" autocomplete="new-password">
+                                    <input type="newpassword" id="newPassword" name="newPassword" class="form-control" placeholder="Password" autocomplete="new-password">
                                     <div class="invalid-feedback" id="errorPassword"></div>
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="repeatPassword">Repeat Password</label>
-                                    <input type="repeatpassword" name="repeatPassword" class="form-control" id="repeatPassword" placeholder="Repeat" autocomplete="repeat-password">
+                                    <input type="repeatpassword" id="repeatPassword" name="repeatPassword" class="form-control" placeholder="Repeat" autocomplete="repeat-password">
                                     <div class="invalid-feedback" id="errorPassword"></div>
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label for="inputProvince">Address</label>
-                                    <input type="text" name="Address" class="form-control" id="inputAddress" placeholder="Address">
+                                    <input type="text" id="inputAddress" name="Address" class="form-control" placeholder="Address">
                                     <div class="invalid-feedback" id="errorAddress"></div>
                                 </div>
                                 <div class="form-group col-md-5">
@@ -117,12 +117,12 @@
                                 </div>
                                 <div class="form-group col-md-5">
                                     <label for="inputCity">City</label>
-                                    <input type="text" class="form-control" id="inputCity" placeholder="City">
+                                    <input type="text" id="inputCity" class="form-control" placeholder="City">
                                     <div class="invalid-feedback" id="errorCity"></div>
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label for="inputZip">Zipcode</label>
-                                    <input type="text" class="form-control" id="inputZip" placeholder="Zip">
+                                    <input type="text" id="inputZip" class="form-control" placeholder="Zip">
                                     <div class="invalid-feedback" id="errorZip"></div>
                                 </div>
                                 <div class="form-group">
@@ -606,5 +606,7 @@
     <!-- Optional JavaScript -->
     <script src="validate.js" type="text/javascript"></script>
 </body>
+
+</html>
 
 </html>
