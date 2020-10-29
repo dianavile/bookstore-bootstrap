@@ -1,7 +1,7 @@
 //declare & assign variables to fetch forms
 const form = document.getElementById("myFormId");//search
 const form2 = document.getElementById("myFormId2");//registrer
-//const form3 = document.getElementById("myFormId2");//login
+const form3 = document.getElementById("myFormId3");//login
 
 function searchForm() {
 	let acumErrores = 0;
@@ -36,7 +36,6 @@ function registerForm() {
 	let acumErrores = 0;
 	form.classList.remove('is-invalid');
 
-	//let mail = document.getElementById('inputEmail');
 	let inputEmail = document.forms["myForm2"]["mail"];
     let newPassword = document.forms["myForm2"]["newPassword"];
     let repeatPassword = document.forms["myFormId2"]["repeatPassword"];
@@ -48,13 +47,13 @@ function registerForm() {
 
 	 if (inputEmail.value == "") {
         inputEmail.classList.add("is-invalid");
-        document.getElementById("errorEmail").textContent = "Required field";
+        document.getElementById("errorMail").textContent = "Required field";
 		console.log("Required field");
 		acumErrores++;
 		console.log(acumErrores);
     } else if (!validar_email(inputEmail.value)) {
         inputEmail.classList.add("is-invalid");
-        document.getElementById("errorEmail").textContent = "The email does not meet required format";
+        document.getElementById("errorMail").textContent = "The email does not meet required format";
 		console.log("The email does not meet required format");
 		acumErrores++;
 		console.log(acumErrores);
@@ -115,8 +114,6 @@ function registerForm() {
 	}
 }
 
-
-
 function loginForm() { 
 	let acumErrores = 0;
 	form.classList.remove('is-invalid');
@@ -132,14 +129,21 @@ function loginForm() {
 		acumErrores++;
 		console.log(acumErrores);
 	}
+	if(inputPassword.value == "") {
+		inputPassword.classList.add("is-invalid");
+		document.getElementById("errorInputPassword").textContent = "Required field";
+		console.log("Required field");
+		acumErrores++;
+		console.log(acumErrores);
+	}
+	if (acumErrores > 0) {
+		return false;// don´t send form to server 
+	} else { 
+		return true;
+	}
 
 }
 	
-
-
-
-
-
 //removes invalid color from input, when valid
 //form.addEventListener('blur', (event) => {
 //	console.log(event);

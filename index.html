@@ -87,7 +87,7 @@
                                 <div class="form-group col-sm-4">
                                     <label for="inputmail">Email Address</label>
                                     <input type="mail" id="mail" name="mail" class="form-control" placeholder="mail" pattern="^([\w\d._\-#])+@([\w\d._\-#]+[.][\w\d._\-#]+)+$" autocomplete="username">
-                                    <div class="invalid-feedback" id="errorEmail"></div>
+                                    <div class="invalid-feedback" id="errorMail"></div>
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="newPassword">New Password</label>
@@ -144,7 +144,7 @@
         </div>
     </section>
 
-    <!-- TODO: check validation process login section -->
+    <!-- login section -->
     <section id="loginModal" class="modal fade container-fluid" role="dialog" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -167,8 +167,8 @@
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="inputPassword">Password</label>
-                                <input type="password" class="form-control" id="inputPassword" placeholder="Password" autocomplete="password" required>
-                                <div class="invalid-feedback" id="errorPassword"></div>
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Password" autocomplete="password">
+                                <div class="invalid-feedback" id="errorInputPassword"></div>
                             </div>
                         </div>
                         <div class="form-row">
