@@ -59,8 +59,15 @@ function registerForm() {
 		acumErrores++;
 		console.log(acumErrores);
     } 
-    if(inputPassword.value == "") {
-		inputPassword.classList.add("is-invalid");
+	if(newPassword.value == "") {
+		newPassword.classList.add("is-invalid");
+		document.getElementById("errorPassword").textContent = "Required field";
+		console.log("Required field");
+		acumErrores++;
+		console.log(acumErrores);
+	}
+	 if(repeatPassword.value == "") {
+		repeatPassword.classList.add("is-invalid");
 		document.getElementById("errorPassword").textContent = "Required field";
 		console.log("Required field");
 		acumErrores++;
@@ -101,11 +108,11 @@ function registerForm() {
 		acumErrores++;
 		console.log(acumErrores);
 	}
-	  if (acumErrores > 0){
-        return false;
-    } else{
+	if (acumErrores > 0) {
+		return false;// don´t send form to server 
+	} else { 
 		return true;
-	}	
+	}
 }
 
 //removes invalid color from input, when valid
@@ -115,8 +122,8 @@ function registerForm() {
     //registerValidate();
 //}, true);
 
-/*
+
 function validar_email(email) {
 	var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 	return regex.test(email) ? true : false;
-}*/
+}
