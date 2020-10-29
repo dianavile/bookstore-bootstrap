@@ -115,6 +115,31 @@ function registerForm() {
 	}
 }
 
+
+
+function loginForm() { 
+	let acumErrores = 0;
+	form.classList.remove('is-invalid');
+
+	let email = document.forms["myForm3"]["email"];
+    let inputPassword = document.forms["myForm3"]["inputPassword"];
+
+	//conditional
+	if(email.value == "") {
+		email.classList.add("is-invalid");
+		document.getElementById("errorEmail").textContent = "Required field";
+		console.log("Required field");
+		acumErrores++;
+		console.log(acumErrores);
+	}
+
+}
+	
+
+
+
+
+
 //removes invalid color from input, when valid
 //form.addEventListener('blur', (event) => {
 //	console.log(event);

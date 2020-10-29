@@ -44,8 +44,8 @@
                     </li>
                 </ul>
                 <!-- Search form -->
-                <form method="post" action="answer.html" id="myFormId" class="form-inline mt-4 mt-md-0 mx-lg-8" onsubmit="return searchForm()" name="myForm">
-                    <input type="text" id="search" class="form-control-sm col-12 mr-sm-2" placeholder="Search a book" aria-label="Search" />
+                <form method="post" action="" id="myFormId" class="form-inline mt-4 mt-md-0 mx-lg-8" onsubmit="return searchForm()" name="myForm">
+                    <input type="text" id="search" class="form-control col-12 mr-sm-2" placeholder="Search a book" aria-label="Search" />
                     <div class="invalid-feedback" id="errorSearch"></div>
                 </form>
                 <!-- Register -->
@@ -66,7 +66,7 @@
         </section>
     </nav>
 
-    <!-- TODO: check validation process register section -->
+    <!-- Register form  -->
     <section id="registerModal" class="modal fade container-fluid" role="dialog" tabindex="-1" role="dialog" aria-labelledby="registerModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-lg" role="content">
             <div class="modal-content">
@@ -158,19 +158,17 @@
                 </div>
                 <div class="modal-body">
                     <!-- TODO: Check form validation  -->
-                    <form id="login">
+                    <form method="post" action="" id="myFormId3" onsubmit="return loginForm()" name="myForm3">
                         <div class="form-row">
                             <div class="form-group col-sm-6">
-                                <label for="mail">Email Address</label>
+                                <label for="email">Email Address</label>
                                 <input type="email" id="email" name="email" class="form-control" placeholder="Email" pattern="^([\w\d._\-#])+@([\w\d._\-#]+[.][\w\d._\-#]+)+$" autocomplete="username">
                                 <div class="invalid-feedback" id="errorEmail"></div>
-                                <div class="valid-feedback" id="successEmail"></div>
                             </div>
                             <div class="form-group col-sm-6">
                                 <label for="inputPassword">Password</label>
                                 <input type="password" class="form-control" id="inputPassword" placeholder="Password" autocomplete="password" required>
                                 <div class="invalid-feedback" id="errorPassword"></div>
-                                <div class="valid-feedback" id="successPassword"></div>
                             </div>
                         </div>
                         <div class="form-row">
