@@ -44,8 +44,9 @@
                     </li>
                 </ul>
                 <!-- Search form -->
-                <form class="form-inline mt-4 mt-md-0 mx-lg-8" onsubmit="return validateForm()">
-                    <input type="text" id="search" class="form-control-sm col-12 mr-sm-2" placeholder="Search a book" aria-label="Search" required minlength="3" />
+                <form method="post" action="answer.html" id="myFormId" class="form-inline mt-4 mt-md-0 mx-lg-8" onsubmit="return searchForm()" name="mynameForm">
+                    <input type="text" id="search" class="form-control-sm col-12 mr-sm-2" placeholder="Search a book" aria-label="Search" />
+                    <div class="invalid-feedback" id="errorSearch"></div>
                 </form>
                 <!-- Register -->
                 <li class="nav-item">

@@ -1,6 +1,37 @@
 //declare & assign variables to fetch forms
-const form = document.getElementById('myFormId');
+const form = document.getElementById('myFormId');//search
 
+function searchForm() {
+	let acumErrores = 0;
+	form.classList.remove('is-invalid');
+
+	let search = document.getElementById('search');
+	//let search = document.forms['mynameForm']['search'];//name (form), id (input search)
+
+	//condicionales
+	//innerHTML = texto assignado por un variable
+	//textContent = texto directo
+	if (search.value == '') {
+		search.classList.add('is-invalid'); //add invalid list if search is empty
+		document.getElementById('errorSearch').textContent = "Required field";
+		acumErrores++;
+	} else if (search.value.length < 3) {
+		search.classList.add('is-invalid');
+		document.getElementById('errorSearch').textContent = "Enter at least 3 characters";
+		acumErrores++;
+	} 
+
+	if (acumErrores > 0) {
+		return false;// don´t send form to server 
+	} else { 
+		return true;
+	}
+}
+	
+ 
+
+
+/*
 function validateForm() {
 	let acumErrores = 0;
 	form.classList.remove('is-invalid');
@@ -69,15 +100,17 @@ function validateForm() {
     } else{
 		return true;
 	}
-}
+}*/
 
-form.addEventListener('blur', (event) => {
-	console.log(event);
-	if(event.target.value!='') event.target.classList.remove('is-invalid');
+//removes invalid color from input, when valid
+//form.addEventListener('blur', (event) => {
+//	console.log(event);
+//	if(event.target.value!='') event.target.classList.remove('is-invalid');
     //registerValidate();
-}, true);
+//}, true);
 
+/*
 function validar_email(email) {
 	var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 	return regex.test(email) ? true : false;
-}
+}*/
