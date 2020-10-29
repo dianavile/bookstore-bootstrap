@@ -1,6 +1,6 @@
 //declare & assign variables to fetch forms
 const form = document.getElementById("myFormId");//search
-//const form2 = document.getElementById("myFormId2");//registrer
+const form2 = document.getElementById("myFormId2");//registrer
 //const form3 = document.getElementById("myFormId2");//login
 
 function searchForm() {
@@ -103,7 +103,7 @@ function registerForm() {
 	}	
 	if(!gridCheck.checked) {
 		gridCheck.classList.add("is-invalid");
-		document.getElementById("errorCheck").textContent = "I accept the terms & conditions";
+		document.getElementById("errorCheck").textContent = "Select I accept the terms & conditions";
 		console.log("I accept the terms & conditions");
 		acumErrores++;
 		console.log(acumErrores);
