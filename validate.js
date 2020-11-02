@@ -151,6 +151,20 @@ form.addEventListener('blur', (event) => {
     //registerValidate();
 }, true);
 
+//removes invalid color from input, when valid
+form2.addEventListener('blur', (event) => {
+	console.log(event);
+	if(event.target.value!='') event.target.classList.remove('is-invalid');
+    //registerValidate();
+}, true);
+
+//removes invalid color from input, when valid
+form3.addEventListener('blur', (event) => {
+	console.log(event);
+	if(event.target.value!='') event.target.classList.remove('is-invalid');
+    //registerValidate();
+}, true);
+
 
 function validar_email(email) {
 	var regex = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
