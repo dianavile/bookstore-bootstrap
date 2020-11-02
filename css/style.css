@@ -249,4 +249,14 @@ p.copyright {
 }
 
 
-/*TODO: add media queries to make fully responsive*/
+/*Media queries*/
+
+@media all and (max-width: 768px) {
+    .carousel-inner img {
+        /* changes the image height */
+        height: 28rem;
+    }
+    .main_banner {
+        font-size: 3rem;
+    }
+}
