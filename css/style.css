@@ -248,5 +248,14 @@ p.copyright {
     background-color: #89b3f4;
 }
 
+/*Media queries*/
 
-/*TODO: add media queries to make fully responsive*/
+@media all and (max-width: 768px) {
+    .carousel-inner img {
+        /* changes the image height */
+        height: 28rem;
+    }
+    .main_banner {
+        font-size: 3rem;
+    }
+}
