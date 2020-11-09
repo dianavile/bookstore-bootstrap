@@ -45,61 +45,28 @@ function registerForm() {
 	let inputZip = document.forms["myForm2"]["inputZip"];
 	let gridCheck = document.forms["myForm2"]["gridCheck"];
 
-	 if (inputEmail.value == "") {
-        inputEmail.classList.add("is-invalid");
-        document.getElementById("errorMail").textContent = "Required field";
-		console.log("Required field");
-		acumErrores++;
-		console.log(acumErrores);
-    } else if (!validar_email(inputEmail.value)) {
+	if (!validar_email(inputEmail.value)) {
         inputEmail.classList.add("is-invalid");
         document.getElementById("errorMail").textContent = "The email does not meet required format";
 		console.log("The email does not meet required format");
 		acumErrores++;
 		console.log(acumErrores);
     } 
-	if(newPassword.value == "") {
-		newPassword.classList.add("is-invalid");
-		document.getElementById("errorPassword").textContent = "Required field";
-		console.log("Required field");
-		acumErrores++;
-		console.log(acumErrores);
-	}
-	 if(repeatPassword.value == "") {
+		if (inputZip.value.length != 5) {
+			inputZip.classList.add("is-invalid");
+			document.getElementById("errorZip").textContent = "The zipcode does not meet the required format.";
+			console.log("The zipcode does not meet the required format.");
+			acumErrores++;
+			console.log(acumErrores);
+		}	
+	if (newPassword.value != repeatPassword.value) {
 		repeatPassword.classList.add("is-invalid");
-		document.getElementById("errorRepeatPassword").textContent = "Required field";
-		console.log("Required field");
-		acumErrores++;
-		console.log(acumErrores);
-	}
-    if(inputAddress.value == "") {
-		inputAddress.classList.add("is-invalid");
-		document.getElementById("errorAddress").textContent = "Required field";
-		console.log("Required field");
-		acumErrores++;
-		console.log(acumErrores);
-	}
-    if(inputProvince.value == "") {
-		inputProvince.classList.add("is-invalid");
-		document.getElementById("errorProvince").textContent = "The province is required";
-		console.log("The province is required");
+		document.getElementById("errorRepeatPassword").textContent = "Passwords are different.";
+		console.log("Passwords are different");
 		acumErrores++;
 		console.log(acumErrores);
 	}	
-	if(inputCity.value == "") {
-		inputCity.classList.add("is-invalid");
-		document.getElementById("errorCity").textContent = "The city is missing";
-		console.log("The city is missing");
-		acumErrores++;
-		console.log(acumErrores);
-	}	
-	if(inputZip.value == "" || inputZip.length!=5) {
-		inputZip.classList.add("is-invalid");
-		document.getElementById("errorZip").textContent = "The zipcode does not meet the required format.";
-		console.log("The zipcode does not meet the required format.");
-		acumErrores++;
-		console.log(acumErrores);
-	}	
+	
 	if(!gridCheck.checked) {
 		gridCheck.classList.add("is-invalid");
 		document.getElementById("errorCheck").textContent = "Select I accept the terms & conditions";

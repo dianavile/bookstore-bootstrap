@@ -45,7 +45,7 @@
                 </ul>
                 <!-- Search form -->
                 <form method="post" action="" id="myFormId" class="form-inline mt-4 mt-md-0 mx-lg-8" onsubmit="return searchForm()" name="myForm">
-                    <input type="text" id="search" class="form-control form-control-sm col-12 mr-sm-2" placeholder="Search a book" aria-label="Search" />
+                    <input required type="text" id="search" class="form-control form-control-sm col-12 mr-sm-2" placeholder="Search a book" aria-label="Search" />
                     <div class="invalid-feedback" id="errorSearch"></div>
                 </form>
                 <!-- Register -->
@@ -86,22 +86,22 @@
                             <div class="form-row">
                                 <div class="form-group col-sm-4">
                                     <label for="inputmail">Email Address</label>
-                                    <input type="mail" id="mail" name="mail" class="form-control" placeholder="mail" pattern="^([\w\d._\-#])+@([\w\d._\-#]+[.][\w\d._\-#]+)+$" autocomplete="username">
+                                    <input required type="mail" id="mail" name="mail" class="form-control" placeholder="mail" pattern="^([\w\d._\-#])+@([\w\d._\-#]+[.][\w\d._\-#]+)+$" autocomplete="username">
                                     <div class="invalid-feedback" id="errorMail"></div>
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="newPassword">New Password</label>
-                                    <input type="password" id="newPassword" name="newPassword" class="form-control" placeholder="Password" autocomplete="new-password">
+                                    <input required type="password" id="newPassword" name="newPassword" class="form-control" placeholder="Password" autocomplete="new-password">
                                     <div class="invalid-feedback" id="errorPassword"></div>
                                 </div>
                                 <div class="form-group col-md-4">
                                     <label for="repeatPassword">Repeat Password</label>
-                                    <input type="password" id="repeatPassword" name="repeatPassword" class="form-control" placeholder="repeatPassword" autocomplete="repeat-password">
+                                    <input required type="password" id="repeatPassword" name="repeatPassword" class="form-control" placeholder="repeatPassword" autocomplete="repeat-password">
                                     <div class="invalid-feedback" id="errorRepeatPassword"></div>
                                 </div>
                                 <div class="form-group col-md-12">
                                     <label for="inputProvince">Address</label>
-                                    <input type="text" id="inputAddress" name="Address" class="form-control" placeholder="Address">
+                                    <input required type="text" id="inputAddress" name="Address" class="form-control" placeholder="Address">
                                     <div class="invalid-feedback" id="errorAddress"></div>
                                 </div>
                                 <div class="form-group col-md-5">
@@ -117,17 +117,17 @@
                                 </div>
                                 <div class="form-group col-md-5">
                                     <label for="inputCity">City</label>
-                                    <input type="text" id="inputCity" class="form-control" placeholder="City">
+                                    <input required type="text" id="inputCity" class="form-control" placeholder="City">
                                     <div class="invalid-feedback" id="errorCity"></div>
                                 </div>
                                 <div class="form-group col-md-2">
                                     <label for="inputZip">Zipcode</label>
-                                    <input type="text" id="inputZip" class="form-control" placeholder="Zip">
+                                    <input required type="text" id="inputZip" class="form-control" placeholder="Zip">
                                     <div class="invalid-feedback" id="errorZip"></div>
                                 </div>
                                 <div class="form-group">
                                     <div class="form-check">
-                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <input required class="form-check-input" type="checkbox" id="gridCheck">
                                         <label class="form-check-label" for="gridCheck">I accept the privacy policy</label>
                                         <div class="invalid-feedback" id="errorCheck"></div>
                                     </div>
