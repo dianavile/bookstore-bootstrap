@@ -3,6 +3,8 @@ Landingpage
 
 ![Landingpage](https://github.com/dianavile/bookstore-bootstrap/blob/main/assets/img/Landingpage.jpg)
 
+![Bookstore-Ecommerce](https://github.com/dianavile/bookstore-bootstrap/blob/main/assets/img/Bookstore-Ecommerce.png)
+
 ## Bootstrap setup 
 ```
 bootstrap/
