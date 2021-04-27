@@ -29,9 +29,8 @@ bootstrap/
 - [CodeSandbox](https://codesandbox.io/s/green-tdd-0dzxo)
 
 ### Resources
-```
--[v][Bootstrap documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
--[v][W3school-Bootstrap4](https://www.w3schools.com/bootstrap4/bootstrap_jumbotron.asp)
--[v][FontAwesome](https://fontawesome.com/v4.7.0/)
--[v][Google Fonts](https://fonts.google.com/)
-```
+-[][Bootstrap documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+-[][W3school-Bootstrap4](https://www.w3schools.com/bootstrap4/bootstrap_jumbotron.asp)
+-[][FontAwesome](https://fontawesome.com/v4.7.0/)
+-[][Google Fonts](https://fonts.google.com/)
+
