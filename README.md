@@ -1,7 +1,5 @@
 # Bookstore Ecommerce
-Landingpage
-
-![Landingpage](https://github.com/dianavile/bookstore-bootstrap/blob/main/assets/img/Landingpage.jpg)
+Landingpage with HTML5,CSS3, Bootstrap4 & JavaScript Form Validation.
 
 ![Bookstore-Ecommerce](https://github.com/dianavile/bookstore-bootstrap/blob/main/assets/img/Bookstore-Ecommerce.png)
 
@@ -31,7 +29,7 @@ bootstrap/
 - [CodeSandbox](https://codesandbox.io/s/green-tdd-0dzxo)
 
 ### Resources
--[Bootstrap documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
--[W3school-Bootstrap4](https://www.w3schools.com/bootstrap4/bootstrap_jumbotron.asp)
--[FontAwesome](https://fontawesome.com/v4.7.0/)
--[Google Fonts](https://fonts.google.com/)
+-[v][Bootstrap documentation](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
+-[v][W3school-Bootstrap4](https://www.w3schools.com/bootstrap4/bootstrap_jumbotron.asp)
+-[v][FontAwesome](https://fontawesome.com/v4.7.0/)
+-[v][Google Fonts](https://fonts.google.com/)
